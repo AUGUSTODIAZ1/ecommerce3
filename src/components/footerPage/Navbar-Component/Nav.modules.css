@@ -1,0 +1,32 @@
+.Navbar{
+    background-color: #707070!important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 5px 10%;
+    font-size: 20px;
+}
+
+.t-1{
+    align-items: center;
+
+}
+
+.img-Logo{
+    height: 40px;
+    width: auto;
+    margin: 10px;
+    align-items: center;
+}
+
+.btn{
+    background-color: gray;
+    border: none;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: aqua;
+}
