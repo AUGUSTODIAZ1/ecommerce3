@@ -1,4 +1,4 @@
-import './Footer.css'
+import './Footer.modules.css'
 
 export const FooterAD = () => {
   return (
@@ -30,7 +30,7 @@ export const FooterAD = () => {
             </div>
             <div className="box__footer">
               <h2>Compañia</h2>
-            <a href="#">Acerca de Nosotross</a>
+            <a href="./Error.jsx">Acerca de Nosotross</a>
             <a href="#">Almacenes</a>
             <a href="#">Envios Full</a>
             <a href="#">Servicios</a>
@@ -38,19 +38,19 @@ export const FooterAD = () => {
             <div className="box__footer">
             <h2>Redes Sociales</h2>
             <a href="https://www.facebook.com/" className="face">
-                <i className="fab fa-facebook-square" /> Facebook
+                <img src="https://i.pinimg.com/originals/b3/26/b5/b326b5f8d23cd1e0f18df4c9265416f7.png" alt="imgfcce" className='imgInst'/>Facebook
             </a>
             <a
                 href="https://twitter.com/?lang=es"
                 className="twitter"
             >
-                <i className="fab fa-twitter-square" /> Twitter
+                <img src="https://1000marcas.net/wp-content/uploads/2019/11/Twitter-Logo-tumb-1280x720.png" alt="imgTwt" className='imgTw' /> Twitter
             </a>
             <a href="https://www.linkedin.com/feed/" className="link">
-                <i className="fab fa-linkedin" /> Linkedin
+                <img src="https://cdn-icons-png.flaticon.com/256/174/174857.png" alt="imglink" className="links"/>Linkedin
             </a>
             <a href="https://www.instagram.com/" className="insta">
-                <i className="fab fa-instagram-square" /> Instagram
+               <img src="https://i.pinimg.com/originals/b1/8a/b5/b18ab5c717e6da2faa7f30a2ccf20c72.png" className='imgInstt' alt="inst"/>  Instagram
             </a>
             </div>
         </div>
@@ -60,7 +60,7 @@ export const FooterAD = () => {
             </a>
             <hr />
             <p>
-            Todos los derechos reservados © 2023 <b>AIOS Ecommerce</b>
+            Todos los derechos reservados © 2023 <b>EstorAplle</b>
             </p>
         </div>
 </footer>
