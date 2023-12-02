@@ -60,7 +60,7 @@ export const FooterAD = () => {
             </a>
             <hr />
             <p>
-            Todos los derechos reservados © 2023 <b>EstorAplle</b>
+            Todos los derechos reservados © 2023 <b>Store Apple</b>
             </p>
         </div>
 </footer>

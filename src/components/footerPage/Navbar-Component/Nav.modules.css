@@ -13,6 +13,17 @@
 
 }
 
+.opacity {
+    background: #707070;
+    opacity: 1;
+    width: 100%;
+}
+
+.colorSS{
+    color: white;
+    font-weight: bold;
+}
+
 .img-Logo{
     height: 40px;
     width: auto;
@@ -29,4 +40,16 @@
 
 .btn:hover {
     background-color: aqua;
+}
+
+@media screen and (max-width:990px) {
+    .img-Logo{
+        display: none;
+    }
+    .opacity {
+        background: #707070;
+        margin-top: 20px;
+        opacity: 1;
+        width: 100%;
+    }
 }
