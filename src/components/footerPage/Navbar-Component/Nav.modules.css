@@ -1,5 +1,5 @@
 .Navbar{
-    background-color: #707070!important;
+    background-color: #E2E2E2!important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,14 +14,31 @@
 }
 
 .opacity {
-    background: #707070;
+    background: #E2E2E2;
     opacity: 1;
     width: 100%;
 }
 
+.color-stor {
+    color:  rgb(56, 55, 55);
+}
+
+.color-stor:hover {
+    color:  rgb(12, 12, 12);
+}
+
 .colorSS{
-    color: white;
+    color: rgb(56, 55, 55);
     font-weight: bold;
+}
+
+.colorSS:hover{
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+}
+
+.color-toggle {
+    color: gray;
 }
 
 .img-Logo{
@@ -32,14 +49,15 @@
 }
 
 .btn{
-    background-color: gray;
+    background-color: #dfe9ff8c;
     border: none;
     border-radius: 20px;
     margin: 5px;
 }
 
 .btn:hover {
-    background-color: aqua;
+    background-color: #9AACD3;
+    color: rgba(0, 0, 0, 0.808);
 }
 
 @media screen and (max-width:990px) {
@@ -47,9 +65,19 @@
         display: none;
     }
     .opacity {
-        background: #707070;
+        background: #E2E2E2;
         margin-top: 20px;
         opacity: 1;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
         width: 100%;
     }
+}
+.color-toggle {
+    color: gray;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgba(0, 0, 0, 0.801);
 }

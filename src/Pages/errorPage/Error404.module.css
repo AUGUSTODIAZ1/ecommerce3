@@ -9,9 +9,9 @@
 }
 
 .title {
-  font-size:45px;
+  font-size: 40px ;
+  font-size: auto;
   margin-top:336px;
-  position:relative;
   color: #8093B8;
   padding-top: 200px;
 }
@@ -39,7 +39,6 @@
 		text-align: center;
 	}
 	.title{
-		font-size: 20px;
 		margin-top: -150px;
 	}	
 }

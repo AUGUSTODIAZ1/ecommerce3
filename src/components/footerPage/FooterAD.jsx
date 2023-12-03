@@ -13,7 +13,7 @@ export const FooterAD = () => {
             <div className="box__footer">
             <div className="terms">
                 <p>
-                Nuestro productos Ios ofrecer a
+                Nuestro productos iosѼ ofrecer a
                 los clientes la comodidad de comprar nuestros productos o en línea de
                 manera rápida y segura. Esto incluye: <b>Accesibilidad</b> Permitir a
                 los clientes acceder a una variedad de productos en cualquier momento

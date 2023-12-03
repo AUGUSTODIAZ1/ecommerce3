@@ -120,6 +120,7 @@ footer{
 
 .box__footer a{
     display: flex;
+    text-decoration: none;
     margin-top: 15px;
     color: #7a7a7a;
     font-weight: 600;
