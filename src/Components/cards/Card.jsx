@@ -1,4 +1,3 @@
-import React from 'react'
 import { post, mac, ipad, iphone, watch, airpods, accesorios  } from"./Card.module.css"
 import { Container, Col, Row } from 'react-bootstrap'
 const CardCss = () => {
@@ -24,9 +23,9 @@ const CardCss = () => {
             <div className={post}>  
              <div className={iphone}>
                 <div className='text-center'>
-                    <img src="" alt="" />
-                    <h1 className='fs-5 mt-3'> iPhone  </h1>
-                    <p className='ms-2 me-2'> iPhone es una línea de teléfonos inteligentes de alta gama diseñada y comercializada por Apple Inc. Ejecuta el sistema operativo móvil iOS, conocido hasta mediados de 2010 como "iPhone OS". </p>
+                    <img src="" alt=""/>
+                    <h1 className='fs-5 mt-3'> iPhone </h1>
+                    <p className='ms-2 me-2'> iPhone es una línea de teléfonos inteligentes de alta gama diseñada y comercializada por Apple Inc. Ejecuta el sistema operativo móvil iOS, conocido hasta mediados de 2010 como iPhone iOS. </p>
                     <span className='buttons'>
                         <button className='btn text-light mb-4'>Ver productos</button>
                     </span>

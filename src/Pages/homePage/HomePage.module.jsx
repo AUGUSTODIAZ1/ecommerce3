@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Carousel } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 import { imgSection, sectionHome, slider, roundedImg1, roundedImg2, wave } from "../homePage/HomePage.module.css"
 import CardCss from '../../Components/cards/Card';
 export const HomePage = () => {
@@ -9,7 +9,7 @@ export const HomePage = () => {
         <Row className={sectionHome}>
             <Col xs={12} md={12} lg={6} className={imgSection}>
                     <Col xs={12}>
-                        <h2 className='text-center mt-2 mb-2'> Best Sellers </h2>
+                        <h2 className='text-center mt-2 mb-2 h2Letra'> Best Sellers </h2>
                     </Col>
                 <div className={slider}>
                     <img className={roundedImg1} src="/src/assets/img9.jpg" alt="" />

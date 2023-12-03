@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { HomePage } from './Pages/HomePage/HomePage';
-import { FooterAD } from './components/footerPage/FooterAD';
-import Error404 from './Pages/errorPage/Error404';
+import { HomePage } from './Pages/homePage/HomePage.module';
+import { FooterAD } from './components/footerPage/FooterAD.modules';
+import Error404 from './Pages/errorPage/Error404.module';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarComp from './components/footerPage/Navbar-Component/NavbarComp';
+import NavbarComp from './components/footerPage/Navbar-Component/NavbarComp.modules';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
