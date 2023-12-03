@@ -5,6 +5,7 @@
   .sectionHome {
     background-image: url("/src/assets/img8.jpg");
     background-size: cover;
+    
   }
   /* main section {
   } */
@@ -12,12 +13,9 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgba(8, 1, 1, 0.151);
     color: white;
-    width: 60%;
-    backdrop-filter: blur(5px);
-    border-top-right-radius: 20px ;
-    border-bottom-right-radius: 20px;
+    width: 100%;
+    backdrop-filter: blur(4px);
   }
   .logoSection {
     background-color: rgba(8, 1, 1, 0.324);
@@ -48,9 +46,10 @@
     background-color: rgba(0, 0, 0, 0.338);
   }
   .slider {
-    width: 600px;
+    width: 1200px;
     height: 530px;
     display: flex;
+    margin-bottom: 20px;
   }
   .slider img {
     width: 0;
@@ -73,7 +72,6 @@
     opacity: 1;
     filter: contrast(120%);
   }
-  
   .wave img {
     background-size: 200%;
     opacity: 20%;
@@ -90,6 +88,7 @@
     background-image: url(/src/assets/wave.png);
     background-size: 100% 100%;
     animation: wave 40s linear infinite;
+    position: sticky;
   }
   
   @keyframes wave {
@@ -105,6 +104,11 @@
       background-position-x: 0px;
     }
   }
+  .cardsSection {
+    display: flex;
+    justify-content: space-evenly;  
+  }
+
   
   @media screen and (max-width:600px) {
     .slider {

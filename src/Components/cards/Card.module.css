@@ -1,0 +1,81 @@
+
+.post {
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin-left: 2px;
+    margin-right: 2px;
+    color: white;
+    margin-top: 50px;
+
+    box-shadow: 0 8px 32px 0 rgba(36, 13, 13, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.253);
+}
+.post div {
+    height: 100%;
+}
+.post div:hover {
+    border-radius: 15px;
+    backdrop-filter: blur(7px);
+    transition: 1s;
+}
+.post span button {
+    background-color: rgba(0, 0, 0, 0.421);
+    border-radius: 20px;
+    text-decoration: none;
+  }
+.mac {
+    border-radius: 15px;    
+    background-image: url("/src/assets/imgMac.jpg");
+    background-size: 160% 160%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ipad {
+    border-radius: 15px;    
+    background-image: url("/src/assets/imgIpad3.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.iphone {
+    border-radius: 15px;    
+    background-image: url("/src/assets/imgIphone5.jpg");
+    background-size: 100% 200%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.watch {
+    border-radius: 15px;    
+    background-image: url("/src/assets/imgWatch2.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+.airpods {
+    border-radius: 15px;    
+    background-image: url("/src/assets/imgAirpod2.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.accesorios  {
+    border-radius: 15px;    
+    background-image: url("/src/assets/imgAccesorios2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:600px) { 
+    .products {
+        width: 200px;
+        height: 300px;
+        margin: 5px;
+    }
+    .post {
+        width: 300px;
+        height: 300px;
+    }         
+}
