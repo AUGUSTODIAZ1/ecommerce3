@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       {/* Afuera de Routes elementos estaticos como navbar o footer */}
         <NavbarComp path='/Navbar' elemt={<NavbarComp />} />
       <Routes>
-        <Route path="/Home" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         {/* En Routes van las rutas a mostrarse  */}
         <Route path='/Error' element={<Error404/>}/>
       </Routes>

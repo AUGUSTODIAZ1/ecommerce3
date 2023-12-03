@@ -37,6 +37,7 @@
     border-radius: 15px;    
     background-image: url("/src/assets/imgIpad3.webp");
     background-attachment: fixed;
+    background-size: 220% 100%;
     background-repeat: no-repeat;
     background-position: center center;
 }

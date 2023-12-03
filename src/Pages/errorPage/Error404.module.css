@@ -49,3 +49,11 @@
 		padding: 1px;
 	}
 } 
+a{
+	text-decoration: none;
+	color: #8093B8;
+}
+
+a:hover{
+	color: #e4e6e9;
+}

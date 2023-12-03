@@ -71,6 +71,7 @@
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
         width: 100%;
+        z-index: 3;
     }
 }
 .color-toggle {

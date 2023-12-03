@@ -1,5 +1,6 @@
 import '../errorPage/Error404.module.css'
 import {  volver, title, imgError} from '../errorPage/Error404.module.css'
+import { Link } from 'react-router-dom'
 
 
 const Error404 = () => {
@@ -9,7 +10,7 @@ const Error404 = () => {
     <div className={title}>
     Lo sentimos, ha ocurrido un error!• Error 404
   </div>
-    <button className={volver}>Volver al inicio</button>
+    <button className={volver}><Link to='/' className='decoration'>Volver al inicio</Link></button>
     </section>
   )
 }
