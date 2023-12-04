@@ -42,7 +42,7 @@ footer{
 }
 
 .logo img{
-    width: 135px;
+    width: 115px;
     align-items: center;
     margin-top: 110px;
     margin-bottom: -314px;
@@ -99,7 +99,7 @@ footer{
         height: 30vh;
         margin-top: -210px;
         margin-right: 89px;
-    }
+    }  
     }
 
 .box__footer .terms{
@@ -154,9 +154,13 @@ footer{
     background-color: #7a7a7a;
 }
 
-.box__copyright img {
+.box__copyright .imgPagos {
     width: 200px;
     height: 60px;
+}
+
+.box__copyright .qrFiscal {
+    width: 80px;
 }
 
 .face:hover {
@@ -174,4 +178,3 @@ footer{
 .insta:hover{
     color: rgb(226, 18, 18);
 }
-

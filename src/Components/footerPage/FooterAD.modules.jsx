@@ -56,8 +56,9 @@ export const FooterAD = () => {
             </div>
         </div>
         <div className="box__copyright">
+                <img src="./src/assets/Untitled-removebg-preview.png" alt="qrfiscal" className='qrFiscal' />
             <Link to="/Error">
-            <img src="https://www.hostdron.com/wp-content/uploads/2019/06/pagopaypal.jpg" alt="Pagos" />
+            <img src="./src/assets/pagopaypal-removebg-preview.png" alt="Pagos" className='imgPagos' />
             </Link>
             <hr />
             <p>
