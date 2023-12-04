@@ -24,10 +24,10 @@ export const FooterAD = () => {
             </div>
             <div className="box__footer">
              <h2 className='suger'>Sugerencias</h2>
-             <a href="#">Ihpones</a>
-             <a href="#">Computadoras</a>
-             <a href="#">Auriculares IOS </a>
-             <a href="#">Relojes IOS</a>
+             <a href="#">Ihpone</a>
+             <a href="#">Mac</a>
+             <a href="#">iPad</a>
+             <a href="#">Watch</a>
             </div>
             <div className="box__footer">
               <h2>Compañia</h2>
