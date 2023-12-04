@@ -36,7 +36,7 @@ footer{
 
 .box__footer{
     display: flex;
-    text-align: center;
+    text-align: left;
     flex-direction: column;
     padding: 40px;
 }
