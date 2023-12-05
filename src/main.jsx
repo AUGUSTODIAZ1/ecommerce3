@@ -5,7 +5,8 @@ import { HomePage } from './Pages/homePage/HomePage.module';
 import { FooterAD } from './components/footerPage/FooterAD.modules';
 import Error404 from './Pages/errorPage/Error404.module';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarComp from './components/footerPage/Navbar-Component/NavbarComp.modules';
+import NavbarComp from './Components/footerPage/Navbar-Component/NavbarComp.modules';
+import { DetailPage } from './Pages/detailPage/DetailPage';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,7 +16,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<HomePage />} />
         {/* En Routes van las rutas a mostrarse  */}
-        <Route path='/Error' element={<Error404/>}/>
+        <Route path='/Error' element={<Error404 />}/>
+        <Route path='/Detailpage' element={<DetailPage />}/>
       </Routes>
       <FooterAD/>
     </BrowserRouter>

@@ -8,9 +8,7 @@ export const HomePage = () => {
         <Container fluid>
         <Row className={sectionHome}>
             <Col xs={12} md={12} lg={6} className={imgSection}>
-                    <Col xs={12}>
-                        <h2 className='text-center mt-2 mb-2 h2Letra'> Best Sellers </h2>
-                    </Col>
+                
                 <div className={slider}>
                     <img className={roundedImg1} src="/src/assets/img9.jpg" alt="" />
                     <img src="/src/assets/img1.jpg" alt="" />

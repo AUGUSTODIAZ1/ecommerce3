@@ -3,7 +3,8 @@ import '../Navbar-Component/Nav.modules.css'
 
 const NavbarComp = () => {
   return (
-    <Navbar expand="lg" className="Navbar bg-tertiary" data-bs-theme="dark">
+    <header>
+    <Navbar expand="lg" className="Navbar" data-bs-theme="dark">
       <Container className='opacity'>
         <img className="img-Logo" src="https://trello.com/1/cards/656b68d038e71faa56cd0e8b/attachments/656b68fc26b01dc1723afe97/previews/656b68fd26b01dc1723afed6/download/klipartz.com.png" alt="imgLogo" href="#" ></img>
         <Navbar.Brand href="#home" className='color-stor'>Store Apple</Navbar.Brand>
@@ -25,6 +26,7 @@ const NavbarComp = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </header>
   )
 }
 

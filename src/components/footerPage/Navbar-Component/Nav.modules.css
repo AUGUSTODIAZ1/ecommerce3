@@ -1,10 +1,15 @@
+header {
+    position: static;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(193, 188, 188);
+}
 .Navbar{
-    background-color: #E2E2E2!important;
+    /* background-color: #E2E2E2; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    padding: 5px 10%;
     font-size: 20px;
 }
 
@@ -14,9 +19,7 @@
 }
 
 .opacity {
-    background: #E2E2E2;
-    opacity: 1;
-    width: 100%;
+    background-color: rgb(193, 188, 188);
 }
 
 .color-stor {
@@ -56,17 +59,17 @@
 }
 
 .btn:hover {
-    background-color: #9AACD3;
+    background-color: #6f7072;
     color: rgba(0, 0, 0, 0.808);
 }
+
+
 
 @media screen and (max-width:990px) {
     .img-Logo{
         display: none;
     }
     .opacity {
-        background: #E2E2E2;
-        margin-top: 20px;
         opacity: 1;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
