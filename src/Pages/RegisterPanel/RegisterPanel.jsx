@@ -1,0 +1,137 @@
+import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+import '../LoginPanel/Style.moduleee.css'
+import { Container, Row } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+
+const RegisterPanel = () => {
+  const urlBackend = import.meta.env.VITE_BASE_URL;
+  const navigate = useNavigate() 
+  const { register, handleSubmit, formState: { errors }, getValues } = useForm();
+  const onSubmit = async(data) => {
+    const resp = await fetch(`${urlBackend}/users/createUser`, {
+      method:'POST',
+      body: JSON.stringify(data),
+      headers:{
+        "Content-Type": "application/json"
+      }
+    })
+    const json = await resp.json()
+    Swal.fire({
+      title: 'Registrado con exito!',
+      text: json.mensaje,
+      icon: "success",
+      showConfirmButton: false,
+      timer: 2000
+    }).then(function() {
+      if(resp.ok){
+        navigate('/login')
+      }
+    })
+  }
+
+  return ( 
+    <Container className="d-flex justify-content-center">
+    <form onSubmit={handleSubmit(onSubmit)} className=" caja-login col-lg-5">
+      <Row >
+      <h2 className="fw-bold text-center pt-2 mb-4 ">Reg&iacute;strate</h2>
+        <div className="has-validation mb-4">
+          <input 
+            required
+            type="email" 
+            name="email" 
+            className="form-control entrada-login" 
+            id="email" 
+            placeholder="Correo"
+            {...register("email", { 
+              required: "Debe ingresar un correo.",
+              pattern:  {
+                value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                message: "Ingresa un correo válido."
+              }
+            })} 
+          />
+          {errors.email && <p className="error-icon">{errors.email.message}</p>}
+        </div>
+        <div className="has-validation mb-4"> 
+          <input 
+            type="text" 
+            name="userName" 
+            className="form-control entrada-login" 
+            id="usuario" 
+            placeholder="Nombre de usuario" 
+            {...register("userName", {
+              required: "Debe ingresar el usuario.",
+              minLength: {
+                value: 2,
+                message: "El mínimo requerido de caracteres es 2."
+              },
+              maxLength: {
+                value: 10,
+                message: "El máximo permitido es de 10 caracteres."
+              }
+            })} 
+          />
+          {errors.usuario && <p className="error-icon">{errors.usuario.message}</p>}
+        </div>
+        <div className="has-validation mb-4">
+          <input 
+            type="password" 
+            name="password" 
+            className="form-control entrada-login" 
+            id="pass" 
+            placeholder="Contrase&ntilde;a"
+            {...register("password", { 
+              required: "Debe ingresar una contraseña",
+              pattern: {
+                value: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/,
+                message: "Ingresa una contraseña válida.(Debe incluir al menos una Mayuscula, 1 numero y minino de 5 caracteres)."
+              } 
+              })
+            } 
+          />
+          {errors.password && <p className="error-icon">{errors.password.message}</p>}
+        </div>
+        <div className="has-validation mb-4">
+          <input 
+            type="password" 
+            name="controlPass" 
+            className="form-control entrada-login" 
+            id="controlPass" 
+            placeholder="Repetir contrase&ntilde;a"
+            {...register("controlPassword", { 
+              required: "Debe ingresar una contraseña.",
+              pattern: {
+                value: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/,
+                message: "Ingresa una contraseña válida."
+              },
+              validate: (value) => {
+                const { password } = getValues();
+                return password === value || "Las contraseñas ingresadas no coinciden.";
+              }
+              })
+            } 
+          />
+          {errors.controlPassword && <p className="error-icon">{errors.controlPassword.message}</p>}
+        </div>
+        <div className="col-12 mb-4">
+          <div className="form-check">
+            <input className="form-check-input check-login" type="checkbox" value="" id="invalidCheck" required />
+            <label className="form-check-label" htmlFor="invalidCheck">
+              <span className="mensaje-login">Acepto los</span> <a href="/terms" target="_blank" className="link-login">T&eacute;rminos y condiciones</a>
+            </label>
+          </div>
+        </div>
+        <div className="d-grid gap-2 col-9 col-xs-6 6 mx-auto">
+          <button type="submit" className="btn boton-login" >Suscr&iacute;bete</button>
+        </div>
+        <div className="my-3">
+          <span>Si ya tienes cuenta puedes ingresar desde <a href="/login" className="link-login">aqu&iacute;</a></span>
+        </div>
+      </Row>
+    </form>
+    </Container>
+  );
+}
+
+export default RegisterPanel;
