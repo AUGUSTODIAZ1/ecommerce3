@@ -1,3 +1,164 @@
-h1 {
-    position: relative;
+body ::-webkit-scrollbar {
+    width: 7px;
+}
+body ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.184);
+}
+.detail1 {
+   height: 550px;
+   background-color: rgba(8, 1, 1, 0.324);
+   backdrop-filter: blur(10px); 
+   display: flex;
+   justify-content: center;
+   padding:  10px; 
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+}
+.detail1 div img {
+    display: flex;
+    border-radius: 20px;
+    width: 400px;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: .5s ease;
+}
+.detail1 img:hover {
+    cursor: crosshair;
+    width: 520px;
+    object-fit: cover;
+    filter: contrast(120%);
+}
+.detail2{
+    height: 550px;
+    background-color: rgba(8, 1, 1, 0.324);
+    color: white;
+    backdrop-filter: blur(10px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.detail2 div img {
+    width: 200px;
+    height: 200px;
+}
+.imgDisplay {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.textDisplay {
+    overflow-y: scroll;
+    width: 90%;
+}
+.bgImg {
+    background-image: url("/src/assets/imgIpad3.webp");
+    width: cover;
+    background-position: 50%;
+    background-size: 120% 190%;
+    background-attachment: fixed;
+}
+.sectionDetail div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+}
+.slider img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 50%;
+    transition: .5s ease;
+  }
+
+.slider img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  .slider {
+    width: 1200px;
+    height: 530px;
+    margin-bottom: 20px;
+  }
+  .carritoBtn h1 {
+        background-color: rgba(0, 0, 0, 0.369);
+        text-decoration: none;
+        color: white;
+        padding-top: 8px;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+  }
+
+  .carritoBtn {
+    position: absolute;
+    bottom: -50px;
+  }
+  .carritoBtn h1:hover {
+    background-color: black;
+    transition: 2s;
+  }
+
+@media screen and (max-width:600px) {
+    .bgImg {
+        background-image: url("/src/assets/imgIpad3.webp");
+        width: cover;
+        background-position: 50%;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }   
+    .detail1 div img {
+        display: flex;
+        border-radius: 20px;
+        width: 280px;
+        flex-grow: 1;
+        object-fit: cover;
+        transition: .5s ease;
+    }
+    .detail1 img:hover {
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        object-fit: cover;
+        filter: contrast(120%);
+    }
+    .detail1 {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;  
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .detail2 {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;  
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .carritoBtn i {
+        padding-top: 17px;
+      }
+
+}
+
+@media screen and (max-width:990px) {
+    .detail1 {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;  
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .detail2 {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;  
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
 }

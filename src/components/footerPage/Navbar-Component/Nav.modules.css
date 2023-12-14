@@ -60,9 +60,13 @@ header {
 
 .btn:hover {
     background-color: #6f7072;
+    background-color: #c3ccdf;
     color: rgba(0, 0, 0, 0.808);
 }
-
+/* .abajo {
+    background-color: black;
+    transition: 3s;
+} */
 
 
 @media screen and (max-width:990px) {

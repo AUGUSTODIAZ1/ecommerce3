@@ -18,6 +18,7 @@
 .post div:hover {
     border-radius: 15px;
     backdrop-filter: blur(7px);
+    background-color: rgba(0, 0, 0, 0.352);
     transition: 1s;
 }
 .post span button {

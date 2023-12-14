@@ -1,0 +1,38 @@
+.cardProductsCss {
+    margin: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 460px;
+    color: white;
+    background-color: rgba(8, 1, 1, 0.324);
+    backdrop-filter: blur(7px);
+}
+.cardProductsCss img {
+    display: flex;
+    width: 90%;
+    margin-top: 10px;
+    transition: .5s ease;
+}
+.cardProductsCss div h1 {
+        font-size: 100%;
+}
+.cardProductsCss img:hover {
+    cursor: crosshair;
+    width: 93%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.52);
+    color: rgb(255, 255, 255);
+}
+.buttons button i {
+    color: rgb(95, 81, 81);
+    padding-top: 5px;
+    font-size: 15px;
+}
+.buttons button i:hover {
+    color: rgb(255, 255, 255);
+}
+@media screen and (max-width:600px) { 
+}

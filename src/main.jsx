@@ -7,6 +7,7 @@ import Error404 from './Pages/errorPage/Error404.module';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComp from './Components/footerPage/Navbar-Component/NavbarComp.modules';
 import { DetailPage } from './Pages/detailPage/DetailPage';
+import { ProductsPage } from './Pages/productsPage/ProductsPage';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -16,8 +17,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<HomePage />} />
         {/* En Routes van las rutas a mostrarse  */}
-        <Route path='/Error' element={<Error404 />}/>
         <Route path='/Detailpage' element={<DetailPage />}/>
+        <Route path='/Error' element={<Error404 />}/>
+        <Route path='/Products' element={<ProductsPage />}/>
       </Routes>
       <FooterAD/>
     </BrowserRouter>

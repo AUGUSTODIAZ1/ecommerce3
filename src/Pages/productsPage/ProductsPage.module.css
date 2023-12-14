@@ -1,0 +1,36 @@
+.backBg {
+    background-image: url("/src/assets/img3.jpg");
+    padding: 0px;
+    background-size: 101%;
+    background-repeat: no-repeat;
+}
+.imgFloat img {
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.imgFloat {
+    display: flex;
+    justify-content: center;
+}
+.imgFloat img {
+    animation: itemMove 6s ease-in-out infinite;
+  }
+  
+  @keyframes itemMove {
+    0% {
+      rotate: -5deg;
+    }
+  
+    50% {
+      
+      rotate: 10deg;
+    }
+    100% {
+      rotate: -5deg;
+    }
+  }
+  .abajo {
+    width: 10px;
+    background-color: black;
+  }

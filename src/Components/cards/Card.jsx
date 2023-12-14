@@ -1,4 +1,6 @@
-import { post, mac, ipad, iphone, watch, airpods, accesorios  } from"./Card.module.css"
+import { DetailPage } from "../../Pages/detailPage/DetailPage"
+import { post, mac, ipad, iphone, watch, airpods, accesorios  } from "./Card.module.css"
+import { Link } from "react-router-dom"
 import { Container, Col, Row } from 'react-bootstrap'
 const CardCss = () => {
   return (
@@ -13,7 +15,12 @@ const CardCss = () => {
                     <p className='ms-2 me-2'>
                     Mac OS es el nombre del sistema operativo creado por Apple para su línea de computadoras Macintosh, también aplicado retroactivamente a las versiones anteriores a System 7.6, un avanzado microordenador.  </p>
                     <span className='buttons'>
-                        <button className='btn text-light mb-4'>Ver productos</button>
+                         <button className='btn text-light mb-4'>
+                            
+                           <Link className="text-light" to="/Products"> 
+                              Ver productos
+                           </Link >
+                        </button>
                     </span>
                 </div>
              </div>

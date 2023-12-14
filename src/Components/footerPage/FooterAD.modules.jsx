@@ -24,10 +24,10 @@ export const FooterAD = () => {
             </div>
             <div className="box__footer">
              <h2 className='suger'>Sugerencias</h2>
-             <a href="#">Ihpones</a>
-             <a href="#">Computadoras</a>
-             <a href="#">Auriculares IOS </a>
-             <a href="#">Relojes IOS</a>
+             <a href="#">Ihpone</a>
+             <a href="#">Mac</a>
+             <a href="#">iPad</a>
+             <a href="#">Watch</a>
             </div>
             <div className="box__footer">
               <h2>Compañia</h2>
@@ -56,8 +56,9 @@ export const FooterAD = () => {
             </div>
         </div>
         <div className="box__copyright">
+                <img src="./src/assets/Untitled-removebg-preview.png" alt="qrfiscal" className='qrFiscal' />
             <Link to="/Error">
-            <img src="https://www.hostdron.com/wp-content/uploads/2019/06/pagopaypal.jpg" alt="Pagos" />
+            <img src="./src/assets/pagopaypal-removebg-preview.png" alt="Pagos" className='imgPagos' />
             </Link>
             <hr />
             <p>
