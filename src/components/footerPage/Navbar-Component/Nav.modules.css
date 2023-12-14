@@ -4,8 +4,9 @@
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    padding: 5px 10%;
     font-size: 20px;
+    position: sticky;
+    top: 0px;
 }
 
 .t-1{
@@ -48,6 +49,42 @@
     align-items: center;
 }
 
+.buscar{
+    padding: 5px;
+    align-items: center;
+    background-color: #E1E1E1;
+}
+
+.buscar input{
+    width: 200px;
+    height: 35px;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid #C3CCDF;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.btn-1{
+    top: 0px;
+    right: 0;
+    background: #E1E1E1;
+    padding: 0px;
+    width: 30px;
+    height: 25px;
+    line-height: 55px;
+    padding-top: 5px;
+    text-align: center;
+    color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* .buscar:hover input{
+    width: 150px;
+} */
+
 .btn{
     background-color: #dfe9ff8c;
     border: none;
@@ -82,3 +119,37 @@
 .navbar-nav .nav-link.active {
     color: rgba(0, 0, 0, 0.801);
 }
+
+.info-2{
+    color: #cfd6e6;
+    border-radius: 10px;
+}
+
+.info-2:hover{
+    background-color: #C3CCDF;
+    color: rgba(0, 0, 0, 0.808);
+}
+
+/* .dropDownProfile{
+    position: absolute;
+    top: 4.5rem;
+    right: 1.5rem;
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #E2E2E2;
+    border: 1px solid gray;
+}
+
+.dropDownProfile::before{
+    content: '';
+    position: absolute;
+    top: -0.7rem;
+    right: 2rem;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    background-color: white;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+} */
