@@ -5,12 +5,11 @@ import CardProducts from '../cardsProducts/CardProduct';
 
 const ProductsGallery = () => {
     const [products, setProducts] = useState([]);
-
+    const URL_BASE = import.meta.env.VITE_BASE_URL
     const getAllProducts = async () => {
         try {
-            const { data } = await axios.get("https://rickandmortyapi.com/api/character")
-            setProducts(data.results);
-            console.log(data.results);
+            const { data } = await axios.get(`${URL_BASE}/products`);
+            setProducts(data);
         } catch (error) {
 
         }

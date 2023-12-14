@@ -6,7 +6,7 @@ import { Col } from "react-bootstrap"
 
 const CardProducts = ({data}) => {
   console.log(data);
-  const { name, id, image} = data;
+  const { name, id, image, description} = data;
   return (
     <Col xs={12} md={6} lg={3}  className='d-flex justify-content-center justify-content-center'> 
       <div className={cardProductsCss}>
@@ -15,6 +15,7 @@ const CardProducts = ({data}) => {
         </div>
         <div className="d-flex justify-content-center flex-column align-items-center">
           <h1 className="text-center mt-2"> {name} </h1>
+          <p className="text-center"> {description} </p>
           <div className="d-flex">
           <span className={buttons}>
           <Link className="text-light" to="/DetailPage"> 
